@@ -2,6 +2,7 @@
 .center{
     text-align: center;
 }
+
 .justify{
     text-align: justify;
 }
@@ -25,7 +26,7 @@
 }
 
 #menu li a:hover {
-    color: lightseagreen;
+    color: rgb(20, 158, 192);
 }
 
 .p-30{
@@ -49,4 +50,9 @@
 .mb-50{
     margin-bottom: 50px;
 }
+
 /*Estilos da paginas contato.html*/
+
+.ml-50{
+    margin-left: ;
+}
