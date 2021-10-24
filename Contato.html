@@ -16,36 +16,43 @@
         ><a href="contato.html">Contato</a>
         </li>
     </ul>
-
+    <hr>
     <h1 class="center">Entre em contato comigo</h1>
 
     <div class="container mb-50">
         <div>
-            <h2>Contato:</h2>
+            <h2 >Contato:</h2>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome'></div>
                 <br>
                 <label for="email">E-mail:</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
                 <br>
                 <label for="nome">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <button onclick="enviar()"  >Enviar</button>
             </form>
         </div>
         <div class="ml-50">
             
-            <h2>Endereço:</h2>
+          <h2>Endereço</h2>
             <p>Rua Uruguaiana - Jardim Goncalves, 139 Itaquaquecetuba - SP</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1216372846634!2d-46.34925548554495!3d-23.492127864923084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7b5c3ffa8025%3A0x9fb05e3100ac3009!2sR.%20Uruguaiana%2C%20139%20-%20Jardim%20Goncalves%2C%20Itaquaquecetuba%20-%20SP%2C%2008573-660!5e0!3m2!1spt-BR!2sbr!4v1634819876968!5m2!1spt-BR!2sbr"
-             width="400" height="250" style="border:0;" 
-             allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1216372846634!2d
+            -46.34925548554495!3d-23.492127864923084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+            1s0x94ce7b5c3ffa8025%3A0x9fb05e3100ac3009!2sR.%20Uruguaiana%2C%20139%20-%20Jardim%20Goncal
+            ves%2C%20Itaquaquecetuba%20-%20SP%2C%2008573-660!5e0!3m2!1spt-BR!2sbr!4v1634819876968!5m2!
+            1spt-BR!2sbr"
+             width="400" height="250" style="border: 50px;" 
+             allowfullscreen="" loading="lazy"
+             onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'
+             ></iframe>
         </div>
     </div>
     <hr>
@@ -70,6 +77,8 @@
         Todos os direitos reservados: Esther Melo &copy
       </p> 
     </footer>
- 
+
+<script src="assets/js/script.js"></script>    
+
 </body>
 </html>

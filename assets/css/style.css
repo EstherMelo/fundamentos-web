@@ -30,11 +30,15 @@
 }
 
 .p-30{
-    padding: 30px;
+    padding: 20px 20px 0px 20px;
+}
+
+.ft-p{
+    padding: 50px;
 }
 
 .br-50{
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 .wh-300{
@@ -54,5 +58,7 @@
 /*Estilos da paginas contato.html*/
 
 .ml-50{
-    margin-left: ;
+    margin-left: 50px;
 }
+
+
